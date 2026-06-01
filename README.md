@@ -1,34 +1,20 @@
 📦 Spam Classification Project 
 
-A beginner‑friendly machine learning project that builds a spam vs. ham text classifier using Python. This project introduces essential NLP techniques, feature engineering, model training, and evaluation — forming a solid foundation for more advanced text‑processing projects.
+A clean and beginner‑friendly machine learning project for classifying SMS messages as spam or ham, using essential NLP techniques and simple ML models.
+Perfect as a Week‑1 foundation project for learning text preprocessing, feature extraction, and model evaluation.
 
-🚀 Project Overview
-This project demonstrates how to classify SMS messages as spam or ham using:
+✨ Highlights
+Spam detection using classical ML
 
-Text preprocessing
+TF‑IDF vectorization for text features
 
-Tokenization
+Clean preprocessing pipeline
 
-TF‑IDF vectorization
+Model evaluation with accuracy, precision, recall, F1
 
-Machine learning models
+Notebook + modular Python scripts
 
-Evaluation metrics
-
-It is designed as a Week‑1 learning project for building confidence in NLP and ML fundamentals.
-
-🧠 Key Features
-Text preprocessing (cleaning, lowercasing, removing punctuation)
-
-TF‑IDF feature extraction
-
-Model training using Logistic Regression / Naive Bayes
-
-Evaluation metrics (accuracy, precision, recall, F1-score)
-
-Confusion matrix visualization
-
-Reproducible workflow with clear code structure
+Simple, readable, and reproducible
 
 📁 Project Structure
 Code
@@ -47,44 +33,61 @@ spam_project-week1/
 │
 ├── requirements.txt
 └── README.md
-🛠️ Technologies Used
-Python 3.x
+🧠 How It Works
+1. Preprocessing
+Lowercasing
 
-Pandas
+Removing punctuation
 
-NumPy
+Tokenization
 
-Scikit‑learn
+Stopword removal
 
-Matplotlib / Seaborn
+TF‑IDF vectorization
 
-Jupyter Notebook
+2. Model Training
+Uses simple, effective models such as:
 
-📊 Model Performance
-The model achieves strong performance on the SMS Spam dataset, with metrics such as:
+Logistic Regression
 
-Accuracy: ~95–98%
+Naive Bayes
+
+3. Evaluation
+Includes:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1‑score
+
+Confusion matrix
+
+🚀 Run the Project
+Install dependencies
+Code
+pip install -r requirements.txt
+Run the notebook
+Code
+jupyter notebook notebooks/spam_classification.ipynb
+Or train via script
+Code
+python src/train.py
+📊 Example Results
+Typical performance on the SMS Spam dataset:
+
+Accuracy: 95–98%
 
 Precision: High (important for spam detection)
 
-Recall: High (reduces false negatives)
+Recall: High (reduces missed spam)
 
-You can view detailed metrics in the notebook or evaluation script.
-
-▶️ How to Run the Project
-1. Install dependencies
-Code
-pip install -r requirements.txt
-2. Run the notebook
-Code
-jupyter notebook notebooks/spam_classification.ipynb
-3. Or run the training script
-Code
-python src/train.py
-📚 Learning Goals
+🎯 Learning Goals
 This project helps you understand:
 
-How text data is transformed into numerical features
+How raw text becomes numerical features
 
 How ML models learn from text
 
@@ -92,9 +95,9 @@ How to evaluate classification models
 
 How to structure a small ML project professionally
 
-🤝 Contributions
-Contributions, improvements, and suggestions are welcome.
-Feel free to open issues or submit pull requests.
+🤝 Contributing
+Contributions and suggestions are welcome.
+Feel free to open an issue or submit a pull request.
 
 📜 License
-This project is released under the MIT License.
+MIT License.
