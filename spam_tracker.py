@@ -8,9 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, f1_score, precision_score
 import pandas as pd
 import dagshub
-import mlflow
 
-dagshub.init(repo_owner="narjesfarhat", repo_name="YOUR_MLFLOW_REPO_NAME", mlflow=True)
+dagshub.init(repo_owner="narjesfarhat", repo_name="spam_project-week1", mlflow=True)
 mlflow.set_experiment("iris-experiment")
 
 # Load dataset (free, no download needed)
